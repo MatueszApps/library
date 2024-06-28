@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add_book {
+    margin-bottom: 20px;
+}
+
+.add_book h2 {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.add_book p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.add_book label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.add_book input[type="text"],
+.add_book input[type="checkbox"] {
+    display: block;
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.add_book input[type="checkbox"] {
+    width: auto; /* Override full width for checkbox */
+    margin-right: 10px;
+}
+
+button#submit {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button#submit:hover {
+    background-color: #0056b3;
+}
+
+#bookList {
+    margin-top: 20px;
+}
+
+#bookList div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+}
+
